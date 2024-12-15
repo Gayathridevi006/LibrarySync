@@ -1,0 +1,7 @@
+Django==5.1.4
+djangorestframework==3.14.0
+gunicorn==20.2.0  # for running the application in production
+mysqlclient==2.1.1  # MySQL database adapter for Python
+django-crispy-forms==1.14.0  # for crispy forms integration
+django-celery-beat==2.2.1  # for periodic tasks in Celery
+celery==5.2.7  # Celery for task queue management

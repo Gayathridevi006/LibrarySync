@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibrarySync - Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to LibrarySync</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'author-list-create' %}">Authors</a></li>
+                <li><a href="{% url 'book-list-create' %}">Books</a></li>
+                <li><a href="{% url 'borrow-record-list-create' %}">Borrow Records</a></li>
+                <li><a href="{% url 'report' %}">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
